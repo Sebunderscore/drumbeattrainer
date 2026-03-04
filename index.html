@@ -716,9 +716,9 @@
                 </div>
             </div>
             <div class="toggle-group">
-                <button class="btn-toggle active" id="loopBtn">↻ Loop</button>
+                <button class="btn-toggle active" id="loopBtn">‚Üª Loop</button>
                 <div class="btn-toggle metro-btn" id="metronomeBtn">
-                    <span class="metro-inner">♩ Metronome</span>
+                    <span class="metro-inner">‚ô© Metronome</span>
                     <div class="metro-volume-row" onclick="event.stopPropagation()">
                         <input type="range" id="metroVolume" class="metro-volume-slider" min="0" max="1" step="0.05" value="0.2">
                         <span class="metro-volume-val" id="metroVolumeVal">20%</span>
@@ -727,7 +727,7 @@
             </div>
             <div class="button-group">
                 <button class="btn-generate" id="generateBtn">Generate Beat</button>
-                <button class="btn-play" id="playTargetBtn" disabled>▶ Play Beat</button>
+                <button class="btn-play" id="playTargetBtn" disabled>‚ñ∂ Play Beat</button>
             </div>
         </div>
 
@@ -750,7 +750,7 @@
             </div>
             <div style="margin-top: 20px;">
                 <div class="button-group">
-                    <button class="btn-secondary" id="playInputBtn">▶ Play Your Beat</button>
+                    <button class="btn-secondary" id="playInputBtn">‚ñ∂ Play Your Beat</button>
                     <button class="btn-secondary" id="clearBtn">Clear All</button>
                     <button class="btn-check" id="checkBtn" disabled>Check Answer</button>
                 </div>
@@ -1210,11 +1210,11 @@
             const targetBtn = document.getElementById('playTargetBtn');
             const inputBtn = document.getElementById('playInputBtn');
             if (playing) {
-                if (targetBtn) { targetBtn.textContent = '⏹ Stop'; targetBtn.classList.add('btn-stop'); }
-                if (inputBtn) { inputBtn.textContent = '⏹ Stop'; inputBtn.classList.add('btn-stop'); }
+                if (targetBtn) { targetBtn.textContent = '‚èπ Stop'; targetBtn.classList.add('btn-stop'); }
+                if (inputBtn) { inputBtn.textContent = '‚èπ Stop'; inputBtn.classList.add('btn-stop'); }
             } else {
-                if (targetBtn) { targetBtn.textContent = '▶ Play Beat'; targetBtn.classList.remove('btn-stop'); }
-                if (inputBtn) { inputBtn.textContent = '▶ Play Your Beat'; inputBtn.classList.remove('btn-stop'); }
+                if (targetBtn) { targetBtn.textContent = '‚ñ∂ Play Beat'; targetBtn.classList.remove('btn-stop'); }
+                if (inputBtn) { inputBtn.textContent = '‚ñ∂ Play Your Beat'; inputBtn.classList.remove('btn-stop'); }
             }
         }
 
